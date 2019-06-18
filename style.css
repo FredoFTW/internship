@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 400px;
+  margin: auto;
+}
+
+.calculator, 
+.display-wrap {
+  border-radius: 12px 12px 0 0;
+}
+
+.calculator {
+  border-radius: 12px 12px 12px 12px;
+}
+
+div.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+  background-color: grey;
+}
+
+div.display-wrap {
+  height: 125px;
+  background-image: linear-gradient(brown, rgb(119, 33, 33));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.display {
+  background-color: white;
+  height: 75px;
+  width: 300px;
+  text-align: right;
+  font-size: 70px;
+  padding-right: 20px;
+}
+
+.key-pad {
+  width: 320px;
+  height: 320px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.key-pad-row {
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.key {
+  width: 70px;
+  height: 70px; 
+  background-color: teal;
+  transition: 250ms ease-in-out;
+  font-size: 70px;
+  text-align: center;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+
+.key:hover {
+  cursor: pointer;
+  width: 75px;
+  height: 75px;
+}
+
+@media screen and (max-width: 700px){
+  div.display-wrap {
+    background-image: linear-gradient(green, green);
+  }
+}

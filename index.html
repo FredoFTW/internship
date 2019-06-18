@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <section>
+    <div class="calculator">
+
+
+      <div class="display-wrap">
+        <div class="display">0</div>
+      </div>
+
+      <div class="key-pad">
+        <div class="key-pad-row">
+          <div onclick="Calculate.addValue('7')" class="key">7</div>
+          <div onclick="Calculate.addValue('8')" class="key">8</div>
+          <div onclick="Calculate.addValue('9')" class="key">9</div>
+          <div onclick="Calculate.clear()" class="key">C</div>
+        </div>
+
+        <div class="key-pad-row">
+          <div onclick="Calculate.addValue('4')" class="key">4</div>
+          <div onclick="Calculate.addValue('5')" class="key">5</div>
+          <div onclick="Calculate.addValue('6')" class="key">6</div>
+          <div onclick="Calculate.compute('x')" class="key">x</div>
+        </div>
+        <div class="key-pad-row">
+          <div onclick="Calculate.addValue('1')" class="key">1</div>
+          <div onclick="Calculate.addValue('2')" class="key">2</div>
+          <div onclick="Calculate.addValue('3')" class="key">3</div>
+          <div onclick="Calculate.compute('-')" class="key">-</div>
+        </div>
+        <div class="key-pad-row">
+          <div onclick="Calculate.addValue('0')" class="key">0</div>
+          <div onclick="Calculate.removeValue()" class="key">dl</div>
+          <div onclick="Calculate.equate()" class="key">=</div>
+          <div onclick="Calculate.compute('+')" class="key">+</div>
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+    </div>
+
+  </section>
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
